@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ html body .container {
+ 	height:100%;
+ }
+
+ body .container {
+   height: auto;
+   min-height: 100%;
+ }
+
+ .footer {
+   clear: both;
+   position: relative;
+   z-index: 10;
+   height: 2em;
+   margin-top: -2em;
+ }
+
+ .content {
+   padding-bottom: 2em;
+ }

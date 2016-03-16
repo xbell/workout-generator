@@ -1,1 +1,168 @@
 <h1>Workout Generator</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="intro">
+        <p class="intro-p">
+          Having trouble coming up with unique and challenging exercises?  Unable to find workouts that fit your lifestyle? This site can help you generate workouts perfect for you! Just provide some specifications and you will be on your way in no time!
+        </p>
+      </div>
+
+      <div class="form">
+        <form action="/profile" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+
+          <div class="gender">
+            <h4>Gender</h4>
+            <label for="female">Female</label>
+            <input id="female" name="female" type="radio" value="female"/>
+            <label class="male" for="male">Male</label>
+            <input id="male" name="male" type="radio" value="male"/>
+          </div>
+
+          <div class="skill">
+            <h4>Skill Level</h4>
+            <label for="beginner">Beginner</label>
+            <input id="beginner" name="beginner" type="radio" value="beginner"/>
+            <label class="novice" for="novice">Novice</label>
+            <input id="novice" name="novice" type="radio" value="novice"/>
+            <label class="intermediate" for="intermediate">Intermediate</label>
+            <input id="intermediate" name="intermediate" type="radio" value="intermediate"/>
+            <label class="advanced" for="advanced">Advanced</label>
+            <input id="advanced" name="advanced" type="radio" value="advanced"/>
+            <label class="elite" for="elite">Elite</label>
+            <input id="elite" name="elite" type="radio" value="elite"/>
+          </div>
+
+          <div class="weight">
+            <h4>Estimated Body Weight</h4>
+            <select id="weight_id" name="weight_id">
+              <option value="100">100</option>
+              <option value="110">110</option>
+              <option value="120">120</option>
+              <option value="130">130</option>
+              <option value="140">140</option>
+              <option value="150">150</option>
+              <option value="160">160</option>
+              <option value="170">170</option>
+              <option value="180">180</option>
+              <option value="190">190</option>
+              <option value="200">200</option>
+              <option value="210">210</option>
+              <option value="220">220</option>
+              <option value="230">230</option>
+              <option value="240">240</option>
+              <option value="250">250</option>
+              <option value="260">260</option>
+              <option value="270">270</option>
+              <option value="280">280</option>
+              <option value="290">290</option>
+              <option value="300">300</option>
+              <option value="310">310</option>
+              <option value="320">320</option>
+              <option value="330">330</option>
+              <option value="340">340</option>
+              <option value="350">350</option>
+              <option value="360">360</option>
+              <option value="370">370</option>
+              <option value="380">380</option>
+              <option value="390">390</option>
+              <option value="400">400</option>
+              <option value="410">410</option>
+              <option value="420">420</option>
+              <option value="430">430</option>
+              <option value="440">440</option>
+              <option value="450">450</option>
+              <option value="460">460</option>
+              <option value="470">470</option>
+              <option value="480">480</option>
+              <option value="490">490</option>
+              <option value="500">500</option>
+            </select>
+          </div>
+
+          <div class="body">
+            <h4>What area of the body do you want to work on?</h4>
+            <label for="full-body">Full Body Workout</label>
+            <input id="full-body" name="full-body" type="radio" value="1"/>
+            <label class="upper" for="upper-body">Upper Body Workout</label>
+            <input id="upper-body" name="upper-body" type="radio" value="1"/>
+            <label class="lower" for="lower-body">Lower Body Workout</label>
+            <input id="lower-body" name="lower-body" type="radio" value="1"/>
+            <!-- <label for="arms">Arm Workout</label>
+            <input id="arms" name="arms" type="radio" value="1"/>
+            <label for="legs">Leg Workout</label>
+            <input id="legs" name="legs" type="radio" value="1"/> -->
+            <!-- <label for="abdominal">Abdominal Workout</label>
+            <input id="abdominal" name="abdominal" type="radio" value="1"/>
+            <label for="back">Back Workout</label>
+            <input id="back" name="back" type="radio" value="1"/> -->
+            <label class="surprise" for="surprise-me">Surprise Me!</label>
+            <input id="surprise-me" name="surprise-me" type="radio" value="1"/>
+          </div>
+
+          <!-- <div>
+            <h4>Equipment Available/Preferred Equipment</h4>
+            <label for="all-equipments">Check All Equipments</label>
+            <input id="all-equipments" name="all-equipments" type="checkbox" value="1"/>
+            <label for="barbell">Barbell</label>
+            <input id="barbell" name="barbell" type="checkbox" value="1"/>
+            <label for="free-weights">Dumbell</label>
+            <input id="free-weights" name="free-weights" type="checkbox" value="1"/>
+            <label for="yoga-ball">Yoga Ball</label>
+            <input id="yoga-ball" name="yoga-ball" type="checkbox" value="1"/>
+            <label for="medicine-ball">Medicine Ball</label>
+            <input id="medicine-ball" name="medicine-ball" type="checkbox" value="1"/>
+            <label for="kettle-bell">Kettlebell</label>
+            <input id="kettle-bell" name="kettle-bell" type="checkbox" value="1"/>
+            <label for="jump-rope">Jump Rope</label>
+            <input id="jump-rope" name="jump-rope" type="checkbox" value="1"/>
+            <label for="no-equipment">No Equipment</label>
+            <input id="no-equipment" name="no-equipment" type="checkbox" value="1"/>
+          </div> -->
+          <div class="equipment">
+            <h4>Equipment Available/Preferred Equipment</h4>
+            <h5>(Check All That Apply)</h5>
+            <% @equipments.each do |equipment| %>
+              <%= label_tag(equipment.name.titleize) %>
+              <%= check_box_tag(equipment.name.downcase) %>
+            <% end %>
+          </div>
+
+          <div class="unit">
+            <h4>Measurement Unit of Weight</h4>
+            <label for="lbs">Pounds (lbs)</label>
+            <input id="lbs" name="lbs" type="radio" value="lbs"/>
+            <label class="kgs" for="kgs">Kilograms (kgs)</label>
+            <input id="kgs" name="kgs" type="radio" value="kgs"/>
+          </div>
+
+          <div class="time">
+            <h4>Workout Time</h4>
+            <select id="weight_id" name="weight_id">
+              <option value="no-preference">No Preference</option>
+              <option value="100">5-10 Minutes</option>
+              <option value="110">11-15 Minutes</option>
+              <option value="120">16-20 Minutes</option>
+              <option value="130">21-25 Minutes</option>
+              <option value="140">26-30 Minutes</option>
+              <option value="150">31-35 Minutes</option>
+              <option value="160">36-40 Minutes</option>
+              <option value="170">41-45 Minutes</option>
+              <option value="180">46-50 Minutes</option>
+              <option value="190">51-55 Minutes</option>
+              <option value="200">56-60 Minutes</option>
+              <option value="210">Lay It On Me!</option>
+            </select>
+          </div>
+
+          <div class="submit">
+            <input type="submit" class="btn btn-default" />
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
