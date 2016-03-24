@@ -130,7 +130,7 @@
             <h5>(Check All That Apply)</h5>
             <% @equipments.each do |equipment| %>
               <%= label_tag(equipment.name.titleize) %>
-              <%= check_box_tag("equipment[]", equipment.name) %>
+              <%= check_box_tag("equipment[]", equipment.id) %>
             <% end %>
           </div>
 

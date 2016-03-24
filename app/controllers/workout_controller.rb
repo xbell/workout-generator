@@ -21,16 +21,12 @@ class WorkoutController < ApplicationController
     @gender = params[:gender]
     @skill = (params[:skill]).to_i
     @body = params[:body]
-    @equipment = params[:equipment]
+    @equipment_ids = params[:equipment] << 9
     @num_of_movements = params[:num_of_movements].to_i
     @unit = params[:unit]
     @time = params[:time]
 
-    @skill_option = rand(1..@skill)
-
-    movements = Movement.where(min_skill_level: @skill_option)
-
-    # reviewed_pictures = Picture.joins(:reviews).where(["reviews.user_id = ?", current_user.id])
+    movements = Movement.where("min_skill_level <= ?", @skill).where(body_area: @body).where(equipment_id: @equipment_ids)
 
     @selected_movements = []
     @selected_amounts = []
@@ -39,7 +35,7 @@ class WorkoutController < ApplicationController
       rand_movement = (movements - @selected_movements).sample
       @selected_movements << rand_movement
 
-      # randomly select an amount associate with the randome movement selected
+      # randomly select an amount associate with the random movement selected
       movement_amounts = MovementAmount.where(movement_id: rand_movement.id)
       @selected_amounts << movement_amounts.sample
     end

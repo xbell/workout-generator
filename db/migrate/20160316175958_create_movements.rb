@@ -4,7 +4,8 @@ class CreateMovements < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.string :body_area
-      t.string :min_skill_level
+      t.integer :min_skill_level
+      t.integer :equipment_id
 
       t.timestamps null: false
     end

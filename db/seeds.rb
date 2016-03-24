@@ -622,122 +622,63 @@ MovementAmount.create(movement_id: move_yogaball_hamstring_curls.id, value_strin
 
 MovementAmount.create(movement_id: move_yogaball_hamstring_curls.id, value_string: "20 reps")
 
-MovementEquipment.create(movement_id: move_burpees.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_pushups.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_jumping_jacks.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_air_squats.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_lunges.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_pistols.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_handrelease_pushups.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_situps.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_supermans.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_vups.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_wall_sits.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_planks.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_squat_jumps.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_grasshoppers.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_crickets.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_handstand_holds.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_handstand_pushups.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_jumping_lunges.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_side_planks.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_superman_holds.id, equipment_id: equip_none.id)
-
-MovementEquipment.create(movement_id: move_bar_thrusters.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_bar_squat_cleans.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_bar_clean_jerks.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_kettlebell_swings.id, equipment_id: equip_kettlebell.id)
-
-MovementEquipment.create(movement_id: move_overhead_bar_lunges.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_wall_balls.id, equipment_id: equip_medball.id)
-
-MovementEquipment.create(movement_id: move_su_jump_rope.id, equipment_id: equip_jump_rope.id)
-
-MovementEquipment.create(movement_id: move_du_jump_rope.id, equipment_id: equip_jump_rope.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_thrusters.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_overhead_bar_squats.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_burpee_over_bars.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_burpee_box_jumps.id, equipment_id: equip_box.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_squat_cleans.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_clean_jerks.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_overhead_dumbbell_squats.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_overhead_dumbbell_lunges.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_overhead_yogaball_squats.id, equipment_id: equip_yogaball.id)
-
-MovementEquipment.create(movement_id: move_yogaball_knee_tucks.id, equipment_id: equip_yogaball.id)
-
-MovementEquipment.create(movement_id: move_box_jumps.id, equipment_id: equip_box.id)
-
-MovementEquipment.create(movement_id: move_bar_push_presses.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_bar_push_jerks.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_pullups.id, equipment_id: equip_pullup_bar.id)
-
-MovementEquipment.create(movement_id: move_bar_hangs.id, equipment_id: equip_pullup_bar.id)
-
-MovementEquipment.create(movement_id: move_toes_to_bars.id, equipment_id: equip_pullup_bar.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_floor_presses.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_shoulder_presses.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_upright_dumbbell_rows.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_upright_bar_rows.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_yogaball_back_extentions.id, equipment_id: equip_yogaball.id)
-
-MovementEquipment.create(movement_id: move_yogaball_tricep_dips.id, equipment_id: equip_yogaball.id)
-
-MovementEquipment.create(movement_id: move_yogaball_vups.id, equipment_id: equip_yogaball.id)
-
-MovementEquipment.create(movement_id: move_russian_swings.id, equipment_id: equip_kettlebell.id)
-
-MovementEquipment.create(movement_id: move_bar_fs.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_bar_bs.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_bar_deadlifts.id, equipment_id: equip_bar.id)
-
-MovementEquipment.create(movement_id: move_kettlebell_goblet_squats.id, equipment_id: equip_kettlebell.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_goblet_squats.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_lunges.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_dumbbell_calf_raises.id, equipment_id: equip_dumbbells.id)
-
-MovementEquipment.create(movement_id: move_yogaball_hamstring_curls.id, equipment_id: equip_yogaball.id)
+move_burpees.update(equipment_id: equip_none.id)
+move_pushups.update(equipment_id: equip_none.id)
+move_jumping_jacks.update(equipment_id: equip_none.id)
+move_air_squats.update(equipment_id: equip_none.id)
+move_lunges.update(equipment_id: equip_none.id)
+move_pistols.update(equipment_id: equip_none.id)
+move_handrelease_pushups.update(equipment_id: equip_none.id)
+move_situps.update(equipment_id: equip_none.id)
+move_supermans.update(equipment_id: equip_none.id)
+move_vups.update(equipment_id: equip_none.id)
+move_wall_sits.update(equipment_id: equip_none.id)
+move_planks.update(equipment_id: equip_none.id)
+move_squat_jumps.update(equipment_id: equip_none.id)
+move_grasshoppers.update(equipment_id: equip_none.id)
+move_crickets.update(equipment_id: equip_none.id)
+move_handstand_holds.update(equipment_id: equip_none.id)
+move_handstand_pushups.update(equipment_id: equip_none.id)
+move_jumping_lunges.update(equipment_id: equip_none.id)
+move_side_planks.update(equipment_id: equip_none.id)
+move_superman_holds.update(equipment_id: equip_none.id)
+move_bar_thrusters.update(equipment_id: equip_bar.id)
+move_bar_squat_cleans.update(equipment_id: equip_bar.id)
+move_bar_clean_jerks.update(equipment_id: equip_bar.id)
+move_kettlebell_swings.update(equipment_id: equip_kettlebell.id)
+move_overhead_bar_lunges.update(equipment_id: equip_bar.id)
+move_wall_balls.update(equipment_id: equip_medball.id)
+move_su_jump_rope.update(equipment_id: equip_jump_rope.id)
+move_du_jump_rope.update(equipment_id: equip_jump_rope.id)
+move_dumbbell_thrusters.update(equipment_id: equip_dumbbells.id)
+move_overhead_bar_squats.update(equipment_id: equip_bar.id)
+move_burpee_over_bars.update(equipment_id: equip_bar.id)
+move_burpee_box_jumps.update(equipment_id: equip_box.id)
+move_dumbbell_squat_cleans.update(equipment_id: equip_dumbbells.id)
+move_dumbbell_clean_jerks.update(equipment_id: equip_dumbbells.id)
+move_overhead_dumbbell_squats.update(equipment_id: equip_dumbbells.id)
+move_overhead_dumbbell_lunges.update(equipment_id: equip_dumbbells.id)
+move_overhead_yogaball_squats.update(equipment_id: equip_yogaball.id)
+move_yogaball_knee_tucks.update(equipment_id: equip_yogaball.id)
+move_box_jumps.update(equipment_id: equip_box.id)
+move_bar_push_presses.update(equipment_id: equip_bar.id)
+move_bar_push_jerks.update(equipment_id: equip_bar.id)
+move_pullups.update(equipment_id: equip_pullup_bar.id)
+move_bar_hangs.update(equipment_id: equip_pullup_bar.id)
+move_toes_to_bars.update(equipment_id: equip_pullup_bar.id)
+move_dumbbell_floor_presses.update(equipment_id: equip_dumbbells.id)
+move_dumbbell_shoulder_presses.update(equipment_id: equip_dumbbells.id)
+move_upright_dumbbell_rows.update(equipment_id: equip_dumbbells.id)
+move_upright_bar_rows.update(equipment_id: equip_bar.id)
+move_yogaball_back_extentions.update(equipment_id: equip_yogaball.id)
+move_yogaball_tricep_dips.update(equipment_id: equip_yogaball.id)
+move_yogaball_vups.update(equipment_id: equip_yogaball.id)
+move_russian_swings.update(equipment_id: equip_kettlebell.id)
+move_bar_fs.update(equipment_id: equip_bar.id)
+move_bar_bs.update(equipment_id: equip_bar.id)
+move_bar_deadlifts.update(equipment_id: equip_bar.id)
+move_kettlebell_goblet_squats.update(equipment_id: equip_kettlebell.id)
+move_dumbbell_goblet_squats.update(equipment_id: equip_dumbbells.id)
+move_dumbbell_lunges.update(equipment_id: equip_dumbbells.id)
+move_dumbbell_calf_raises.update(equipment_id: equip_dumbbells.id)
+move_yogaball_hamstring_curls.update(equipment_id: equip_yogaball.id)

@@ -41,7 +41,8 @@ ActiveRecord::Schema.define(version: 20160323185827) do
     t.string   "name"
     t.string   "description"
     t.string   "body_area"
-    t.string   "min_skill_level"
+    t.integer  "min_skill_level"
+    t.integer  "equipment_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
