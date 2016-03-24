@@ -29,14 +29,17 @@ class WorkoutController < ApplicationController
     @skill_option = rand(1..@skill)
 
     movements = Movement.where(min_skill_level: @skill_option)
-    
+
+    # reviewed_pictures = Picture.joins(:reviews).where(["reviews.user_id = ?", current_user.id])
 
     @selected_movements = []
     @selected_amounts = []
     @num_of_movements.times do
-      rand_movement = movements.sample
+      # randomly select a movement that has not already been selected
+      rand_movement = (movements - @selected_movements).sample
       @selected_movements << rand_movement
-      movements.delete(rand_movement)
+
+      # randomly select an amount associate with the randome movement selected
       movement_amounts = MovementAmount.where(movement_id: rand_movement.id)
       @selected_amounts << movement_amounts.sample
     end

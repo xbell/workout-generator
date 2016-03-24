@@ -15,12 +15,12 @@
 <p>
   Random Workout
   <% @num_of_movements.times do |i| %>
-    <% movement = @selected_movements[i] %>
+    <% rand_movement = @selected_movements[i] %>
     <li>
-      <%= movement.name %>
+      <%= rand_movement.name %>
     </li>
     <li>
-      <%= movement.description %>
+      <%= rand_movement.description %>
     </li>
     <li>
       <%= @selected_amounts[i].value_string %>

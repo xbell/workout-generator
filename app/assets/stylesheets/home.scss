@@ -1,3 +1,114 @@
+html{
+    background-color: #f3f3f3;
+}
+
+.form-labels-on-top{
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-labels-on-top .form-row{
+    text-align: left;
+    max-width: 315px;
+    margin: 25px auto 0;
+}
+
+.form-labels-on-top .form-title-row{
+    margin: 0 auto 40px;
+}
+
+.form-labels-on-top h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #4C565E;
+    font-size: 24px;
+    padding: 0 0 12px 0;
+    margin: 0;
+    border-bottom: 2px solid #6CAEE0;
+}
+
+.form-labels-on-top .form-row > label span{
+    display: block;
+    box-sizing: border-box;
+    color:  #5f5f5f;
+    width: 200px;
+    padding: 0 0 12px;
+}
+
+.form-labels-on-top input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 300px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-labels-on-top input[type=radio],
+.form-labels-on-top input[type=checkbox]{
+    box-shadow: none;
+    width: auto;
+}
+
+.form-labels-on-top select{
+    background-color: #ffffff;
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-labels-on-top .form-radio-buttons > div{
+    margin-bottom: 10px;
+}
+
+.form-labels-on-top .form-radio-buttons label span{
+    margin-left: 8px;
+    color:  #5f5f5f;
+    font-weight: normal;
+}
+
+.form-labels-on-top .form-radio-buttons input{
+    width: auto;
+}
+
+.form-labels-on-top button{
+    border-radius: 2px;
+    background-color:  #6caee0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin-top: 15px;
+}
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 600px) {
+
+    .form-labels-on-top{
+        padding: 30px;
+    }
+
+    .form-labels-on-top input{
+        width: 240px;
+    }
+
+}
+____________________________________________________________________
+
 h1 {
   text-align: center;
   color: #93B7BE;
@@ -11,45 +122,45 @@ h1 {
 }
 
 .gender {
-  text-align: center;
+  // text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
 .gender h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #785964;
 }
 
 .gender .male {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .skill {
-  text-align: center;
+  // text-align: left;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
 .skill h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #785964;
 }
 
 .skill .novice {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .skill .intermediate {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
-.skill .advanced {
-  margin-left: 20px;
-}
+// .skill .advanced {
+//   margin-left: 15px;
+// }
 
 .skill .elite {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .weight {
@@ -59,41 +170,41 @@ h1 {
 }
 
 .weight h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #785964;
 }
 
 .body {
-  text-align: center;
+  // text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
 .body h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #785964;
 }
 
 .body .upper {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .body .lower {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
-.body .surprise {
-  margin-left: 20px;
-}
+// .body .surprise {
+//   margin-left: 20px;
+// }
 
 .equipment {
-  text-align: center;
+  // text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
 .equipment h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #785964;
 }
 
@@ -103,36 +214,36 @@ h1 {
 }
 
 .equipment input {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .unit {
-  text-align: center;
+  // text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
 .unit h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #785964;
 }
 
 .unit .kgs {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .time {
-  text-align: center;
+  // text-align: center;
   font-size: 15px;
   margin-bottom: 20px;
 }
 
 .time h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #785964;
 }
 
 .submit {
-  text-align: center;
+  // text-align: center;
   margin-top: 40px;
 }

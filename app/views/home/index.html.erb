@@ -10,10 +10,14 @@
       </div>
 
       <div class="form">
-        <form action="/workout" method="POST" enctype="multipart/form-data">
+        <form class="form-labels-on-top" action="/workout" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
 
-          <div class="gender">
+          <div class="form-title-row">
+            <h1>Fill Form Below</h1>
+          </div>
+
+          <div class="gender form-row">
             <h4>Gender</h4>
             <label for="female">Female</label>
             <input id="female" name="gender" type="radio" value="female"/>
@@ -21,7 +25,7 @@
             <input id="male" name="gender" type="radio" value="male"/>
           </div>
 
-          <div class="skill">
+          <div class="skill form-row">
             <h4>Skill Level</h4>
             <label for="beginner">Beginner</label>
             <input id="beginner" name="skill" type="radio" value="1"/>
@@ -82,13 +86,13 @@
             </select>
           </div> -->
 
-          <div class="body">
+          <div class="body form-row">
             <h4>What area of the body do you want to work on?</h4>
-            <label for="full-body">Full Body Workout</label>
+            <label for="full-body">Full</label>
             <input id="full-body" name="body" type="radio" value="full"/>
-            <label class="upper" for="upper-body">Upper Body Workout</label>
+            <label class="upper" for="upper-body">Upper</label>
             <input id="upper-body" name="body" type="radio" value="upper"/>
-            <label class="lower" for="lower-body">Lower Body Workout</label>
+            <label class="lower" for="lower-body">Lower</label>
             <input id="lower-body" name="body" type="radio" value="lower"/>
             <!-- <label for="arms">Arm Workout</label>
             <input id="arms" name="arms" type="radio" value="1"/>
@@ -98,8 +102,8 @@
             <input id="abdominal" name="abdominal" type="radio" value="1"/>
             <label for="back">Back Workout</label>
             <input id="back" name="back" type="radio" value="1"/> -->
-            <label class="surprise" for="surprise-me">Surprise Me!</label>
-            <input id="surprise-me" name="body" type="radio" value="1"/>
+            <!-- <label class="surprise" for="surprise-me">Surprise Me!</label>
+            <input id="surprise-me" name="body" type="radio" value="1"/> -->
           </div>
 
           <!-- <div>
@@ -121,7 +125,7 @@
             <label for="no-equipment">No Equipment</label>
             <input id="no-equipment" name="no-equipment" type="checkbox" value="1"/>
           </div> -->
-          <div class="equipment">
+          <div class="equipment form-row">
             <h4>Equipment Available/Preferred Equipment</h4>
             <h5>(Check All That Apply)</h5>
             <% @equipments.each do |equipment| %>
@@ -130,7 +134,7 @@
             <% end %>
           </div>
 
-          <div class="num_of_movements">
+          <div class="num_of_movements form-row">
             <h4>Number of Movements</h4>
             <select id="movements_id" name="num_of_movements">
               <option value="1">1</option>
@@ -142,7 +146,7 @@
             </select>
           </div>
 
-          <div class="unit">
+          <div class="unit form-row">
             <h4>Measurement Unit of Weight</h4>
             <label for="lbs">Pounds (lbs)</label>
             <input id="lbs" name="unit" type="radio" value="lbs"/>
@@ -150,7 +154,7 @@
             <input id="kgs" name="unit" type="radio" value="kgs"/>
           </div>
 
-          <div class="time">
+          <div class="time form-row">
             <h4>Workout Time</h4>
             <select id="time_id" name="time">
               <option value="no-preference">No Preference</option>
@@ -169,7 +173,7 @@
             </select>
           </div>
 
-          <div class="submit">
+          <div class="submit form-row">
             <input type="submit" class="btn btn-default" />
           </div>
         </form>
